@@ -48,8 +48,8 @@ app.use(passport.session());
 // Instruct Express to pass on any request made to the '/graphql' route
 // to the GraphQL instance.
 app.use('/graphql', expressGraphQL({
-  schema,
-  graphiql: true
+    schema,
+    graphiql: true
 }));
 
 // Webpack runs as a middleware.  If any request comes in for the root route ('/')
